@@ -1,0 +1,29 @@
+I"�<h2 id="前言">前言</h2>
+
+<p>這個問題其實困擾我一段時間了, 所以今天來解決一下, 雖然有很多種辦法, 但我比較喜歡 <code class="language-plaintext highlighter-rouge">HTTPS Credentials Caching</code> 這個功能的解決辦法, Les’s Go~</p>
+
+<hr />
+
+<h2 id="前置設定">前置設定</h2>
+
+<p>在開始之前, 請先設定 git 的使用者及電子郵件</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config <span class="nt">--global</span> user.name <span class="o">=</span> <span class="s2">"使用者名稱"</span>
+git config <span class="nt">--global</span> user.name <span class="o">=</span> <span class="s2">"使用者電子郵件"</span></code></pre></figure>
+
+<p>接下來請 cd 到自己的 git repository, 或者從 github clone 一個</p>
+
+<hr />
+
+<h2 id="設置">設置</h2>
+
+<p>1.進到自己的 repository 後, 執行以下指令</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git config <span class="nt">--global</span> credential.helper store</code></pre></figure>
+
+<p>2.進行一次 push</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push</code></pre></figure>
+
+<p>3.輸入完密碼後, 就完成了, 如果再 push 一次, 就會發現 git 不會詢問密碼了, 如果不想要繼續記住密碼, 只要把 <code class="language-plaintext highlighter-rouge">~/.git-credentials</code> 這個檔案刪除就好~</p>
+:ET

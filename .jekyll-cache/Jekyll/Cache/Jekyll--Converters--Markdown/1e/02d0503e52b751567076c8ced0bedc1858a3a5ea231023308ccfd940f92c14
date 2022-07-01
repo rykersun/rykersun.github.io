@@ -1,0 +1,119 @@
+I"�<h2 id="前言">前言</h2>
+
+<p>今天來整理一下 Anaconda 在 Windows 上的一些操作, 最近有點忙, 所以下次再來整理 Pycharm 的設定, BTW 這篇應該會有很多截圖 :D</p>
+
+<hr />
+
+<h2 id="下載">下載</h2>
+
+<p>這個應該很簡單吧…</p>
+
+<p><a href="https://www.anaconda.com/products/individual" target="_blank">官網連結</a></p>
+
+<p><img src="/assets/img/post/20201211/anaconda_web.png" alt="anaconda_web" /></p>
+
+<hr />
+
+<h2 id="安裝">安裝</h2>
+
+<p>打開下載好的檔案, 會看到以下視窗</p>
+
+<p><img src="/assets/img/post/20201211/install-1.png" alt="install_1" /></p>
+
+<p>按下 Next</p>
+
+<p><img src="/assets/img/post/20201211/install-2.png" alt="install_2" /></p>
+
+<p>選擇 Just Me</p>
+
+<p><img src="/assets/img/post/20201211/install-3.png" alt="install_3" /></p>
+
+<p>選擇自己的安裝位置, Anaconda 本身沒有很大 2.7GB 而已, 但如果之後安裝很多套件…就不好說了, 所以假如你只是個新手, Anaconda 預裝的套件應該就夠用了, 那麼就照預設就好, 但如果你需要安裝大量的套件, 我會建議裝在空間比較大的地方</p>
+
+<p><img src="/assets/img/post/20201211/install-4.png" alt="install_4" /></p>
+
+<p>這裡就照預設就好, 不將 anaconda 加入環境變數</p>
+
+<p>完成後就按下下一步吧!</p>
+
+<hr />
+
+<h2 id="初嘗-conda">初嘗 conda</h2>
+
+<p>剛安裝完打開應該會如下圖</p>
+
+<p><img src="/assets/img/post/20201211/anaconda-screen.png" alt="anaconda_home_page" /></p>
+
+<p>接者打開它的 prompt</p>
+
+<p><img src="/assets/img/post/20201211/anaconda-prompt-screen.png" alt="prompt" /></p>
+
+<p>以下指令可以查看 Python 版本</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">python <span class="nt">-V</span></code></pre></figure>
+
+<p>以下指令可以查看 conda 目前安裝的套件</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda list</code></pre></figure>
+
+<p><img src="/assets/img/post/20201211/commandline-screen.png" alt="commandline_screen" /></p>
+
+<p>可以看到 conda 已經幫我們安裝了一些常用的套件, 這樣我們就不必自行下載了, 真是方便啊~</p>
+
+<hr />
+
+<h2 id="建立虛擬環境">建立虛擬環境</h2>
+
+<p>接著來看看怎麼建立一個乾淨的虛擬環境吧!</p>
+
+<p>首先來看看總共有哪些環境</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda <span class="nb">env </span>list</code></pre></figure>
+
+<p><img src="/assets/img/post/20201211/env_list.png" alt="env_list" /></p>
+
+<p>可以看到我們只有一個叫 <code class="language-plaintext highlighter-rouge">(base)</code> 的環境, 而星號則是我們所在的環境</p>
+
+<p>接下來透過以下指令來建立一個叫做 <code class="language-plaintext highlighter-rouge">my_env_1</code> 的環境, 後面的可以加上想安裝的套件, 這裡我選擇安裝 python, 版本可以自行指定, 這邊安裝 3.8.5</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda create <span class="nt">-n</span> my_env_1 <span class="nv">python</span><span class="o">=</span>3.8.5</code></pre></figure>
+
+<p><img src="/assets/img/post/20201211/create_env.png" alt="create_env" /></p>
+
+<p>輸入 y 來確認建立環境</p>
+
+<p>完成後如下圖</p>
+
+<p><img src="/assets/img/post/20201211/create_done.png" alt="create_done" /></p>
+
+<p>可以看到 conda 很貼心的提醒我們如何啟用新建的環境</p>
+
+<p>activate 吧!</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda activate my_env_1</code></pre></figure>
+
+<p><img src="/assets/img/post/20201211/diff_env.png" alt="env_diff" /></p>
+
+<p>使用 <code class="language-plaintext highlighter-rouge">conda list</code> 來看看跟原本的套件有沒有差別</p>
+
+<p><img src="/assets/img/post/20201211/env_conda_list.png" alt="env_conda_list" /></p>
+
+<p>可以看到只有乾淨的 python 3.8.5 不像之前有一堆套件了, 這樣就不怕會弄亂作業系統了</p>
+
+<hr />
+
+<h2 id="移除虛擬環境">移除虛擬環境</h2>
+
+<p>如果要移除虛擬環境, 可以使用以下指令</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda <span class="nb">env </span>remove <span class="nt">-n</span> 虛擬環境名稱</code></pre></figure>
+
+<p>比如我想移除剛剛建立的虛擬環境, 就可以這樣打</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda <span class="nb">env </span>remove <span class="nt">-n</span> my_env_1</code></pre></figure>
+
+<p><img src="/assets/img/post/20201211/env-remove.png" alt="env_remove" /></p>
+
+<p>以上分享希望能夠幫助到各位~</p>
+
+:ET

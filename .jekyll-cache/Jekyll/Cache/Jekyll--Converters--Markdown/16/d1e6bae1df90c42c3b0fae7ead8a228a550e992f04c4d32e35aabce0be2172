@@ -1,0 +1,66 @@
+I"�<h2 id="前言">前言</h2>
+
+<p>最近開始學習 python, 以後可能時不時就做一些練習<del>(製造廢文)</del>, 這次的練習是 bmi 計算器, 先來看看規則吧!</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">bmi</span> <span class="o">-&gt;</span> <span class="n">體重除以身高</span><span class="p">(</span><span class="n">m</span><span class="p">)</span><span class="n">平方</span>
+<span class="n">bmi</span> <span class="o">&lt;</span> <span class="mf">18.5</span> <span class="o">=</span> <span class="n">過輕</span>
+<span class="mi">24</span> <span class="o">&gt;</span> <span class="n">bmi</span> <span class="o">&gt;</span> <span class="mf">18.5</span> <span class="o">=</span> <span class="n">適中</span>
+<span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">24</span> <span class="o">=</span> <span class="n">過重</span></code></pre></figure>
+
+<hr />
+
+<h2 id="思路">思路</h2>
+
+<p>1.由於身高在計算時, 使用的單位是公尺 (m), 所以要寫一個 function 來轉換身高~</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">height_converter</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">h</span><span class="o">/</span><span class="mi">100</span></code></pre></figure>
+
+<p>2.接下來要寫一個 function 來計算 bmi 值</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">make_bmi</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">w</span><span class="o">/</span><span class="p">(</span><span class="n">h</span><span class="o">*</span><span class="n">h</span><span class="p">)</span></code></pre></figure>
+
+<p>3.取得使用者的身高及體重, 並且計算出 bmi 值</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">height</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"身高(cm): "</span><span class="p">)</span>
+<span class="n">weight</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"體重(kg): "</span><span class="p">)</span>
+
+<span class="n">new_height</span> <span class="o">=</span> <span class="n">height_converter</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">height</span><span class="p">))</span>
+
+<span class="n">bmi</span> <span class="o">=</span> <span class="n">make_bmi</span><span class="p">(</span><span class="n">new_height</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">weight</span><span class="p">))</span></code></pre></figure>
+
+<p>4.依照一開始的條件來分析使用者的 bmi 狀況</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">min_bmi</span> <span class="o">=</span> <span class="mf">18.5</span>
+<span class="n">max_bmi</span> <span class="o">=</span> <span class="mi">24</span>
+
+<span class="k">if</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="n">min_bmi</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"過輕!"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">" (bmi: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s">'%.1f'</span> <span class="o">%</span> <span class="n">bmi</span><span class="p">)</span> <span class="o">+</span> <span class="s">")"</span><span class="p">)</span>
+
+<span class="k">elif</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="n">max_bmi</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"健康!"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">" (bmi: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s">'%.1f'</span> <span class="o">%</span> <span class="n">bmi</span><span class="p">)</span> <span class="o">+</span> <span class="s">")"</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"過重!"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">""</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">" (bmi: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s">'%.1f'</span> <span class="o">%</span> <span class="n">bmi</span><span class="p">)</span> <span class="o">+</span> <span class="s">")"</span><span class="p">)</span></code></pre></figure>
+
+<hr />
+
+<h2 id="結果">結果</h2>
+
+<p><img src="/assets/img/post/20201005.png" alt="code_result" /></p>
+
+<p><a href="https://github.com/vuncrychen/pythonBasic/blob/master/bmi.py" target="_blank">完整程式碼 on github</a></p>
+
+<hr />
+
+<h2 id="筆記">筆記</h2>
+
+<ul>
+  <li>使用 input(“”) 來取得使用者輸入值, 引號內可直接 print 輸入要求</li>
+  <li>print(‘%.1f’ % bmi) 四捨五入到小數點第一位</li>
+</ul>
+:ET

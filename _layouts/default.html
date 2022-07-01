@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-default.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% include footer.html %}
+        <script>addBackToTop({
+            scrollDuration: 500
+        })</script>
+    </body>
+</html>
