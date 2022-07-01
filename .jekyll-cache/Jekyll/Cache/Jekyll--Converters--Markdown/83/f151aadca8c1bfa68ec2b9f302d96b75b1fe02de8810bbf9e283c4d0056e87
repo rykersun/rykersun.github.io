@@ -1,0 +1,36 @@
+I"S<p>這篇文章是紀錄給我自己看的，內容是重灌之後如何把原本的部落格環境弄起來。</p>
+
+<h1 id="step-1-install-dependencies">Step 1. Install dependencies</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>npm nodejs
+
+<span class="nb">sudo </span>npm <span class="nb">install</span> <span class="nt">-g</span> n
+
+<span class="nb">sudo </span>npm <span class="nb">install</span> <span class="nt">-g</span> gulp
+
+<span class="nb">sudo </span>n 11.15.0</code></pre></figure>
+
+<h1 id="step-2-install-jekyll">Step 2. Install Jekyll</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>ruby-full build-essential zlib1g-dev
+
+<span class="nb">echo</span> <span class="s1">'# Install Ruby Gems to ~/gems'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+
+<span class="nb">echo</span> <span class="s1">'export GEM_HOME="$HOME/gems"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+
+<span class="nb">echo</span> <span class="s1">'export PATH="$HOME/gems/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+
+<span class="nb">source</span> ~/.bashrc
+
+gem <span class="nb">install </span>jekyll bundler</code></pre></figure>
+
+<h1 id="step-3-npm-install">Step 3. npm install</h1>
+
+<p>Clone your blog.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>rykersun.github.io/
+
+npm <span class="nb">install</span></code></pre></figure>
+
+<p>done.</p>
+:ET
