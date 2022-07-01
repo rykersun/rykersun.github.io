@@ -1,2 +1,0 @@
-# lltyzer.github.io
-blog
