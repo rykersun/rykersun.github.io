@@ -1,0 +1,56 @@
+I":<h1 id="介紹">介紹</h1>
+<p>Lazygit 是一款能夠讓你少打很多 git 指令的工具，而且操作方式完全不需要滑鼠，你只需要將你的手放在鍵盤上，就可以任意的使用 git 去做事，我是在使用 Neovim 的時候才知道 Lazygit 這個工具，當時看到的時候只覺得…</p>
+
+<p><code class="language-plaintext highlighter-rouge">『他媽帥爆了!』</code></p>
+
+<p>所以就一路用到現在了…</p>
+
+<p>當然在使用之前最好還是能夠先了解一點 git 的基本知識，才不會表面看起來很帥，實際上完全不知道自己再幹麻 XD</p>
+
+<h1 id="安裝">安裝</h1>
+<p>首先去 <a href="https://github.com/jesseduffield/lazygit" target="_blank">Lazygit 的 github repository</a> 把 Binary Releases 下載下來</p>
+
+<p>像我是使用 Linux 那我就下載 <code class="language-plaintext highlighter-rouge">lazygit_0.34_Linux_x86_64.tar.gz</code> 這個檔案</p>
+
+<p>然後再使用 tar 把 lazygit 解壓縮出來</p>
+
+<h2 id="command">Command</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">tar</span> <span class="nt">-zxvf</span> lazygit_0.34_Linux_x86_64.tar.gz lazygit</code></pre></figure>
+
+<p>解完之後你就會看到目錄下多了一個 lazygit</p>
+
+<p>我們要將這個檔案放到 <code class="language-plaintext highlighter-rouge">/usr/local/bin</code> 裡面</p>
+
+<h2 id="command-1">Command</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo mv </span>lazygit /usr/local/bin/</code></pre></figure>
+
+<p>這樣就完成了～</p>
+
+<h1 id="設定">設定</h1>
+<p>首先建立一個測試環境</p>
+
+<h2 id="command-2">Command</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir </span>test_lazygit
+<span class="nb">cd </span>test_lazygit/
+git init <span class="nb">.</span>
+lazygit</code></pre></figure>
+
+<p>先別離開，我知道你看到簡體中文很無奈，接下來我會教你如何改成英文</p>
+
+<p>lazygit 的設定檔位置是在 <code class="language-plaintext highlighter-rouge">~/.config/lazygit</code></p>
+
+<p>裡面會有兩個檔案，我們要改的是 <code class="language-plaintext highlighter-rouge">config.yml</code></p>
+
+<p>可以先使用官方的 <a href="https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md" target="_blank">Default 設定檔</a></p>
+
+<p>然後把裡面的 <code class="language-plaintext highlighter-rouge">language: 'auto'</code> 改成 <code class="language-plaintext highlighter-rouge">language: 'en'</code></p>
+
+<p>這樣就會變成英文版了</p>
+
+<p>附上<a href="https://github.com/rykersun/Lazygit-Default-Config/blob/main/config.yml" target="_blank">我的設定檔</a></p>
+
+<h1 id="基本使用-未完待續">基本使用 (未完待續)</h1>
+:ET
