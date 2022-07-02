@@ -1,0 +1,17 @@
+I"T<p>本篇為個人筆記，非教學。</p>
+
+<p>真的好不容易才裝成功…</p>
+
+<p>安裝指令如下:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>dpkg <span class="nt">--add-architecture</span> i386
+
+<span class="nb">sudo </span>apt update
+
+<span class="nb">sudo </span>apt <span class="nb">install </span>gdebi wget gdebi-core libgl1-mesa-glx:i386
+
+wget <span class="nt">-O</span> ~/steam.deb http://media.steampowered.com/client/installer/steam.deb
+
+<span class="nb">sudo </span>gdebi ~/steam.deb</code></pre></figure>
+
+:ET

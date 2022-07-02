@@ -1,0 +1,16 @@
+I"�<p>想要美化全新的 Elementary OS 要做的第一件事情就是安裝 Pantheon Tweaks</p>
+
+<p>安裝指令如下:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common
+
+<span class="nb">sudo </span>add-apt-repository ppa:philip.scott/pantheon-tweaks
+
+<span class="nb">sudo </span>apt update
+
+<span class="nb">sudo </span>apt <span class="nb">install </span>pantheon-tweaks</code></pre></figure>
+
+<p>裝完之後就可以在設定裡面看到 Tweaks 這個選項，點進去之後就可以調整 Shell Theme 以及 Icon Theme 了。</p>
+
+<p>如果想要讓所有應用程式的 Windows Bar 都使用 Dark Style 就可以打開 Appearance 裡面的 <code class="language-plaintext highlighter-rouge">Force to use dark stylesheet</code> 這樣就可以避免某些視窗的 Windows Bar 是黑的，某些又是白的，這種極度醜陋的情況發生了。</p>
+:ET
