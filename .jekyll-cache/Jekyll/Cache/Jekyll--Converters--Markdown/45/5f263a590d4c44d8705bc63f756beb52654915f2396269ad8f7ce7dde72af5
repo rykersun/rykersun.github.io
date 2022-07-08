@@ -1,0 +1,22 @@
+I"	<h1 id="i3-radius-是啥">i3-radius 是啥?</h1>
+<p><code class="language-plaintext highlighter-rouge">i3WM</code> (i3 window manager) 是一種<code class="language-plaintext highlighter-rouge">桌面環境</code> (desktop environment)</p>
+
+<p>而其中有一個分支叫做 <code class="language-plaintext highlighter-rouge">i3-gaps</code> , 可以讓視窗之間有縫隙, 增加視覺美感</p>
+
+<p>而 <code class="language-plaintext highlighter-rouge">i3-gaps</code> 底下又長出了一個分支…也就是今天的主角 <code class="language-plaintext highlighter-rouge">i3-radius</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">i3-radius</code> 可以讓視窗的四個角變得圓滑, 我覺得還不錯看, 所以就選擇這個分支了。</p>
+
+<h1 id="安裝環境">安裝環境</h1>
+<p>這次我是選擇安裝在 Elementary OS 6.0 上面, 因為覺得 Elementary 本身也蠻漂亮的</p>
+
+<p>捨不得刪掉…</p>
+
+<p>所以乾脆就把 i3 也裝在上面, 一箭雙鵰。</p>
+
+<h1 id="build-from-source">Build From Source</h1>
+<p>在安裝之前, 有一些 Dependencies 要先安裝, 已經幫各位整理好了, 如下:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+:ET

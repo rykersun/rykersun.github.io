@@ -1,0 +1,49 @@
+I"Z<h1 id="i3-radius-是啥">i3-radius 是啥?</h1>
+<p><code class="language-plaintext highlighter-rouge">i3WM</code> (i3 window manager) 是一種<code class="language-plaintext highlighter-rouge">桌面環境</code> (desktop environment)</p>
+
+<p>而其中有一個分支叫做 <code class="language-plaintext highlighter-rouge">i3-gaps</code> , 可以讓視窗之間有縫隙, 增加視覺美感</p>
+
+<p>而 <code class="language-plaintext highlighter-rouge">i3-gaps</code> 底下又長出了一個分支…也就是今天的主角 <code class="language-plaintext highlighter-rouge">i3-radius</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">i3-radius</code> 可以讓視窗的四個角變得圓滑, 我覺得還不錯看, 所以就選擇這個分支了。</p>
+
+<h1 id="安裝環境">安裝環境</h1>
+<p>這次我是選擇安裝在 Elementary OS 6.0 上面, 因為覺得 Elementary 本身也蠻漂亮的</p>
+
+<p>捨不得刪掉…</p>
+
+<p>所以乾脆就把 i3 也裝在上面, 一箭雙鵰。</p>
+
+<h1 id="install-dependencies">Install Dependencies</h1>
+<p>在安裝之前, 有一些 Dependencies 要先安裝, 已經幫各位整理好了, 如下:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf xutils-dev libtool libxcb-xrm-dev automake</code></pre></figure>
+
+<p>裝完之後, 就可以開始 build 了。</p>
+
+<h1 id="build-and-install">Build And Install</h1>
+<p>以下開始安裝, 作者很貼心的幫我們把 build 的指令做成了 <code class="language-plaintext highlighter-rouge">build.sh</code></p>
+
+<p>只要執行 <code class="language-plaintext highlighter-rouge">build.sh</code> 完事了。</p>
+
+<h2 id="step-1">Step 1</h2>
+<p>把 i3-radius clone 下來</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/i3-radius</code></pre></figure>
+
+<h2 id="step-2">Step 2</h2>
+<p>進入 i3-radius 並且執行 build.sh</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>i3-radius <span class="o">&amp;&amp;</span> sh build.sh</code></pre></figure>
+
+<h1 id="生成-i3-config-file">生成 i3 config file</h1>
+<p>裝完之後登出就可以看到旁邊有一個齒輪的符號</p>
+
+<p>點那個齒輪就可以選擇使用 i3 登入了~</p>
+
+<p>登入之後會問你幾個問題, 沒意外的話就是問你要將 <code class="language-plaintext highlighter-rouge">$mod key</code> 設成哪個鍵</p>
+
+<p>這裡建議都用預設就好 (Enter 一直按就對了)</p>
+
+<p>變成黑畫面之後不用緊張,</p>
+:ET
