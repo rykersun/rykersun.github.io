@@ -1,0 +1,8 @@
+I"[<h1 id="安裝-dependencies">安裝 Dependencies</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>libxcb1-dev libxcb-keysyms1-dev <span class="se">\</span>
+libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev <span class="se">\</span>
+libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev <span class="se">\</span>
+libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev <span class="se">\</span>
+autoconf xutils-dev libtool automake</code></pre></figure>
+:ET

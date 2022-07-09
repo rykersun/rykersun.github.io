@@ -1,7 +1,0 @@
-I"[<h1 id="i3-radius-是啥">i3-radius 是啥?</h1>
-<p><code class="language-plaintext highlighter-rouge">i3WM</code> (i3 window manager) 是一種<code class="language-plaintext highlighter-rouge">桌面環境</code> (desktop environment)</p>
-
-<p>而其中有一個分支叫做 <code class="language-plaintext highlighter-rouge">i3-gaps</code> , 可以讓視窗之間有縫隙, 增加視覺美感</p>
-
-<p>而 <code class="language-plaintext highlighter-rouge">i3-gaps</code> 底下又長出了一個分支…也就是今天的主角 <code class="language-plaintext highlighter-rouge">i3-radius</code></p>
-:ET
