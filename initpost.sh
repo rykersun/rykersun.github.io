@@ -142,7 +142,7 @@ echo "categories:"
 echo "- categories"
 echo "twitter_text: some text."
 echo "---"
-echo "<!-- [text](link){:target="\_blank"} -->"
+echo "<!-- [text](link){:target=\"\\_blank\"} -->"
 
 }
 

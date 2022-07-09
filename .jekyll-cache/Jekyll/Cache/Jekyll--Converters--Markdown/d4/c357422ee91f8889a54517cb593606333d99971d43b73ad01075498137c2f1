@@ -1,0 +1,43 @@
+I"�<h1 id="安裝-dependencies">安裝 Dependencies</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>libxcb1-dev libxcb-keysyms1-dev <span class="se">\</span>
+libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev <span class="se">\</span>
+libyajl-dev libstartup-notification0-dev <span class="se">\</span>
+libxcb-randr0-dev libev-dev libxcb-cursor-dev <span class="se">\</span>
+libxcb-xinerama0-dev libxcb-xkb-dev <span class="se">\</span>
+libxkbcommon-dev libxkbcommon-x11-dev <span class="se">\</span>
+autoconf xutils-dev libtool automake <span class="se">\</span>
+libxcb-xrm-dev libxcb-shape0-dev</code></pre></figure>
+
+<h1 id="clone-i3-radius">Clone i3-radius</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/i3-radius</code></pre></figure>
+
+<h1 id="build--install">Build &amp;&amp; Install</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>i3-radius <span class="o">&amp;&amp;</span> sh build.sh</code></pre></figure>
+
+<h1 id="確認-i3-radius-是否安裝成功">確認 i3-radius 是否安裝成功</h1>
+
+<p>加入以下設定到設定檔 <code class="language-plaintext highlighter-rouge">(~/.config/i3/config)</code></p>
+
+<p>如果沒有報錯, 代表安裝成功。</p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim">gaps inner <span class="m">20</span>
+gaps outer <span class="m">20</span>
+
+for_window <span class="p">[</span>class<span class="p">=</span><span class="s2">"^.*"</span><span class="p">]</span> border pixel <span class="m">10</span>
+
+smart_borders <span class="k">on</span>
+smart_borders no_gaps
+border_radius <span class="m">20</span></code></pre></figure>
+
+<blockquote>
+  <p>使用 <code class="language-plaintext highlighter-rouge">$mod+Shift+c</code> 來重新載入設定檔</p>
+</blockquote>
+
+<h1 id="for-懶人">For 懶人</h1>
+<p>這邊分享我自己的設定檔, 有需要的也可以參考。</p>
+
+<p><a href="https://github.com/rykersun/config_file/blob/main/i3/config" target="\_blank">我的 i3-radius 設定檔</a></p>
+:ET
