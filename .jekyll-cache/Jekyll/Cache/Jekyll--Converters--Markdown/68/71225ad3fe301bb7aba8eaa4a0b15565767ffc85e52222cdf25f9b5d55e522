@@ -1,0 +1,46 @@
+I"8	<!-- [text](link){:target="\_blank"} -->
+<h1 id="如何看起來像一位專業的工程師">如何看起來像一位"專業的"工程師</h1>
+
+<ul>
+  <li>放棄滑鼠, 那是一種浪費時間的發明</li>
+  <li>刪掉 Windows(我甚至不想幫它上色), 使用 <code class="language-plaintext highlighter-rouge">Linux</code></li>
+  <li>使用 <code class="language-plaintext highlighter-rouge">Terminal</code> 完成所有的工作</li>
+  <li>沒了, 堅持以上三點, 你就是 <code class="language-plaintext highlighter-rouge">True Master</code> 了</li>
+</ul>
+
+<h1 id="安裝-kitty-terminal">安裝 Kitty Terminal</h1>
+
+<p>想成為 <code class="language-plaintext highlighter-rouge">True Master</code>? 那就快裝吧! 別廢話了!</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>kitty</code></pre></figure>
+
+<h1 id="設定你的好朋友">設定你的好朋友</h1>
+
+<p>好了, 恭喜你成功踏出了成為 <code class="language-plaintext highlighter-rouge">True Master</code> 的第一步, 從今天開始, 你們就是好朋友了, 現在快點來設定你的新朋友吧 <del>(真希望現實生活中的朋友也能讓我設定)</del></p>
+
+<h1 id="衣服">衣服</h1>
+
+<p>先給我等等, 你朋友現在裸體, 你們到底想做啥???</p>
+
+<h2 id="幫朋友買新衣服">幫朋友買新衣服</h2>
+
+<p>使用 <a href="https://github.com/dexpota/kitty-themes" target="\_blank">kitty-themes</a> 幫你的朋友穿上新衣服</p>
+
+<h1 id="蛤你說你不會穿">蛤?你說你不會穿??</h1>
+
+<p>穿衣服還要我教?</p>
+
+<p>不教!</p>
+
+<blockquote>
+  <p>提示: <code class="language-plaintext highlighter-rouge">ln -s</code> 代表建立捷徑</p>
+</blockquote>
+
+<h1 id="字體">字體</h1>
+
+<p><code class="language-plaintext highlighter-rouge">~/.config/kitty/kitty.conf</code></p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">font_size</span> <span class="mf">16.0</span>
+<span class="n">font_family</span> <span class="n">JetBrainsMono</span> <span class="n">Nerd</span> <span class="n">Font</span>
+<span class="n">include</span> <span class="p">.</span><span class="o">/</span><span class="n">theme</span><span class="p">.</span><span class="n">conf</span></code></pre></figure>
+:ET
