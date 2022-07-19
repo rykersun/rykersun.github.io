@@ -1,0 +1,29 @@
+I"j<!-- [text](link){:target="\_blank"} -->
+
+<h1 id="環境">環境</h1>
+
+<p>安裝環境為 Ubuntu 22.04 (Fresh Install)</p>
+
+<h1 id="dependencies">Dependencies</h1>
+
+<p><a href="https://github.com/rykersun/self-dependencies" target="\_blank">參考這裡</a></p>
+
+<h2 id="安裝-i3">安裝 i3</h2>
+
+<p>安裝完 Denpendencies 之後, 就要開始來安裝主角了</p>
+
+<p>建議可以先建立一個資料夾來儲存 repository, 才不會讓<code class="language-plaintext highlighter-rouge">$HOME</code>亂七八糟</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> <span class="c"># 回到 $HOME</span>
+<span class="nb">mkdir </span>clone <span class="c"># 建立一個名叫 clone 的資料夾 (存放 repository 的資料夾)</span>
+<span class="nb">cd </span>clone/ <span class="c"># 進入這個資料夾</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/Airblader/i3 i3-gaps
+<span class="nb">cd </span>i3-gaps
+<span class="nb">mkdir</span> <span class="nt">-p</span> build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build
+meson <span class="nt">--prefix</span> /usr/local
+ninja
+<span class="nb">sudo </span>ninja <span class="nb">install</span></code></pre></figure>
+
+<p>安裝完成, 後面會講解如何配置</p>
+:ET
