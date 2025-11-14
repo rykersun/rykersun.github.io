@@ -4,7 +4,7 @@ title: Terms & Conditions
 
 ## Copyright
 
-&copy; 2025 Jane Doe. All rights reserved.
+&copy; 2025 Ryker Sun. All rights reserved.
 
 ## Reuse
 

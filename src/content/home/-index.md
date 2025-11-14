@@ -1,9 +1,9 @@
 ---
-image: "@assets/astrogon-star.svg"
+# image: "@assets/astrogon-star.svg"
 imageAlt: Astrogon logo
-title: Astrogon
-content: A rapidly-customizable template for a blog, documentation, and more.
-button:
-  label: See the Code
-  link: https://github.com/astrogon/astrogon
+title: Not even close
+content: We had a long way to go yet.
+# button:
+#   label: See the Code
+#   link: https://github.com/astrogon/astrogon
 ---

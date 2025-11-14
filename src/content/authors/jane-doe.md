@@ -1,11 +1,11 @@
 ---
-title: Jane Doe
-email: janedoe@email.com
+title: Ryker Sun
+email: rykersun2002@gmail.com
 image: "@assets/profile/jane-doe.jpg"
 social:
-  github: "https://github.com/"
-  linkedIn: "https://www.linkedin.com/"
-  email: "janedoe@janedoe.com"
+  github: "https://github.com/rykersun"
+  linkedIn: "https://www.linkedin.com/in/rykersun/"
+  email: "rykersun2002@gmail.com"
 ---
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+這個人還沒介紹他自己。

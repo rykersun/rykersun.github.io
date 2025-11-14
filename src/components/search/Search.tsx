@@ -68,7 +68,7 @@ const SearchPage = ({ searchList }: Props) => {
             <div className="flex flex-nowrap">
               <input
                 className="w-full glass rounded-lg px-6 py-4 text-txt-p placeholder:text-txt-light dark:placeholder:text-darkmode-txt-light focus:border-darkmode-border focus:ring-transparent dark:text-darkmode-txt-light intersect:animate-fadeDown opacity-0 intersect-no-queue"
-                placeholder="search posts"
+                placeholder="搜尋文章關鍵字"
                 type="search"
                 name="search"
                 value={inputVal}
@@ -85,8 +85,8 @@ const SearchPage = ({ searchList }: Props) => {
             <div className="col-10 lg:col-8 mx-auto p-2 text-center glass rounded-lg intersect:animate-fadeUp opacity-0">
               <p>
                 {inputVal.length < 1
-                  ? "Looking for something?"
-                  : "We couldn't find what you searched for. Try searching again."}
+                  ? "找點什麼"
+                  : "沒有找到任何相關的內容"}
               </p>
             </div>
           ) : (
