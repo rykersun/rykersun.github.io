@@ -60,14 +60,11 @@ export default defineConfig({
     },
     extendDefaultPlugins: true,
   },
-  // 👇👇👇 確保 vite 區塊【同時包含】 optimizeDeps 和 ssr 👇👇👇
   vite: {
     optimizeDeps: {
-      // 1. 這是給「本地開發 (dev)」和「瀏覽器」看的
       include: ["react-lite-youtube-embed"],
     },
     ssr: {
-      // 2. 這是給「建置 (build)」看的 (這才是修復的關鍵)
       noExternal: ["react-lite-youtube-embed"],
     },
   },
