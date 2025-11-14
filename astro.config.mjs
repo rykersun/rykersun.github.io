@@ -60,10 +60,4 @@ export default defineConfig({
     },
     extendDefaultPlugins: true,
   },
-  // 👇👇👇 請加入這個 vite 區塊 👇👇👇
-  vite: {
-    optimizeDeps: {
-      include: ["react-lite-youtube-embed"],
-    },
-  },
 });
