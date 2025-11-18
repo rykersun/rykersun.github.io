@@ -1,5 +1,5 @@
 ---
-title: 作品集
+title: 作品
 description: Jane Doe's projects and programs.
 
 projects:
